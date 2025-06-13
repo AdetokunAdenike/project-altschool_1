@@ -1,6 +1,6 @@
 # FarmLinks360 - Cloud Engineering Project
 
-![Screenshot of Rendered Page](./static/images/landing-page.png)
+![Screenshot of Rendered Page](/static/images/landing-page.png)
 
 ---
 
