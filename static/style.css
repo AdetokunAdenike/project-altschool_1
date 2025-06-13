@@ -1,0 +1,242 @@
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  line-height: 1.6;
+  animation: fadeIn 1.5s ease-in;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.name-wrapper {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Hi! fades in first */
+.name-wrapper .hi {
+  font-size: 2.5rem;
+  color: #00d9ff;
+  text-shadow: 0 0 5px #00d9ff88;
+  animation: fadeInHi 0.6s ease-out forwards;
+  opacity: 0;
+  margin-bottom: 0.2rem;
+}
+
+/* Then "I'm Adenike." types out below */
+.name-wrapper .typed-text {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #00d9ff;
+  text-shadow: 0 0 5px #00d9ff88;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid #00d9ff;
+  width: 0;
+  display: inline-block;
+  animation: typing 2.5s steps(20, end) 0.8s forwards, blink 0.75s step-end infinite;
+  opacity: 1;
+}
+
+.role {
+  font-size: 1.2rem;
+  color: #b0e0e6;
+}
+
+/* Project Section */
+.project {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 217, 255, 0.2);
+  margin-bottom: 2rem;
+  transition: transform 0.3s;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+}
+
+.project h2 {
+  color: #00d9ff;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.pitch {
+  color: #e0ffff;
+  font-size: 1.1rem;
+}
+.project-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.project-images img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 217, 255, 0.15);
+}
+
+/* Bio Section */
+.bio {
+  background-color: rgba(255, 255, 255, 0.08);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+}
+
+.bio h3 {
+  color: #ffcc70;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.bio p {
+  color: #eee;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  color: #ccc;
+  opacity: 0.7;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInHi {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 13ch;
+  }
+}
+
+@keyframes blink {
+  0%, 100% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #00d9ff;
+  }
+}
+.bio a {
+  color: #ffcc70;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.bio a:hover {
+  color: #ffd98b;
+  text-decoration: underline;
+}
+/* Contact Section */
+.contact {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 217, 255, 0.15);
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.contact h3 {
+  color: #ffcc70;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.contact p {
+  color: #eee;
+  font-size: 1.1rem;
+}
+
+.contact a {
+  color: #00d9ff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.contact a:hover {
+  color: #ffffff;
+  text-shadow: 0 0 5px #00d9ff;
+}
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 3rem;
+  padding: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 0.95rem;
+  color: #ccc;
+  opacity: 0.9;
+  box-shadow: 0 -2px 10px rgba(0, 217, 255, 0.05);
+}
+
+footer a {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  color: #00d9ff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+footer a:hover {
+  color: #ffffff;
+  text-shadow: 0 0 8px #00d9ff;
+}
+
+footer p {
+  margin: 0.25rem 0;
+  color: #bbb;
+}
+
