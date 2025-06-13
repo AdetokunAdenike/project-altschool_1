@@ -166,7 +166,7 @@ I used `express.static()` in Node.js to serve the static files.
 
 ## 🌍 Live Demo
 
-**Public IP:** [http://3.250.168.189/>](http://3.250.168.189/)
+**Public IP:** [http://3.250.168.189/](http://3.250.168.189/)
 
 ---
 
