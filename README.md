@@ -144,7 +144,7 @@ I used `express.static()` in Node.js to serve the static files.
 * Verified deployment by visiting:
 
   ```
-  http://<EC2-PUBLIC-IP>:3000
+  http://<EC2-PUBLIC-IP>
   ```
 
 ### 10. 🔄 Version Control with Git & GitHub
