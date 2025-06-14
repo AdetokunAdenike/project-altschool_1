@@ -12,7 +12,6 @@ This README outlines how I planned, developed, and deployed the project from sta
 
 ---
 
-
 ### 1. 🧠 Project Idea & Planning
 
 * **FarmLinks360** is a startup that addresses agro-logistics challenges in Nigeria.
@@ -136,11 +135,16 @@ I used `express.static()` in Node.js to serve the static files.
 
 ### 9. 🚀 Deployment & Testing
 
-* Started Node.js app:
+* Started Node.js app using PM2 to ensure it runs in the background even after terminal logout or crash:
 
   ```bash
-  node app.js
+  npm install -g pm2
+  pm2 start app.js
+  pm2 save
+  pm2 startup
   ```
+
+* This ensures the Node.js app stays running and restarts on server reboot.
 * Verified deployment by visiting:
 
   ```
@@ -175,6 +179,7 @@ I used `express.static()` in Node.js to serve the static files.
 * HTML5, CSS3
 * Node.js (Express)
 * Nginx (as reverse proxy)
+* PM2 (Node process manager)
 * AWS EC2 (Ubuntu)
 
 ---
@@ -192,4 +197,3 @@ GitHub: [AdetokunAdenike](https://github.com/AdetokunAdenike)
 This project is licensed under the MIT License.
 
 > ✅ This project is part of my AltSchool Cloud Engineering Second Semester Exam (2025)
-
