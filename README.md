@@ -170,7 +170,7 @@ I used `express.static()` in Node.js to serve the static files.
 
 ## 🌍 Live Demo
 
-**Public IP:** [http://54.154.83.25/](http://54.154.83.25/)
+**Public IP:** [http://3.249.238.95/](http://3.249.238.95/)
 
 ---
 
