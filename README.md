@@ -12,7 +12,6 @@ This README outlines how I planned, developed, and deployed the project from sta
 
 ---
 
-
 ### 1. 🧠 Project Idea & Planning
 
 * **FarmLinks360** is a startup that addresses agro-logistics challenges in Nigeria.
@@ -26,6 +25,9 @@ This README outlines how I planned, developed, and deployed the project from sta
   ```bash
   ssh -i "my-key.pem" ubuntu@<EC2-PUBLIC-IP>
   ```
+* I created and switched to a dedicated linux user "devuser" for the project
+
+![creation of linux user](static\images\linux-user.png)
 
 ### 3. ⚙️ Installing Dependencies
 
@@ -136,11 +138,16 @@ I used `express.static()` in Node.js to serve the static files.
 
 ### 9. 🚀 Deployment & Testing
 
-* Started Node.js app:
+* Started Node.js app using PM2 to ensure it runs in the background even after terminal logout or crash:
 
   ```bash
-  node app.js
+  npm install -g pm2
+  pm2 start app.js
+  pm2 save
+  pm2 startup
   ```
+
+* This ensures the Node.js app stays running and restarts on server reboot.
 * Verified deployment by visiting:
 
   ```
