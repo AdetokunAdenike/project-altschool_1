@@ -166,8 +166,7 @@ I used `express.static()` in Node.js to serve the static files.
 
 ## 🌍 Live Demo
 
-**Public IP:** [http://54.154.83.25/](http://54.154.83.25/)
-
+**Public IP:** [Server intentionally Shutdown]()
 ---
 
 ## 📜 Tech Stack
@@ -175,6 +174,7 @@ I used `express.static()` in Node.js to serve the static files.
 * HTML5, CSS3
 * Node.js (Express)
 * Nginx (as reverse proxy)
+* PM2 (Node process manager)
 * AWS EC2 (Ubuntu)
 
 ---
@@ -192,4 +192,3 @@ GitHub: [AdetokunAdenike](https://github.com/AdetokunAdenike)
 This project is licensed under the MIT License.
 
 > ✅ This project is part of my AltSchool Cloud Engineering Second Semester Exam (2025)
-
