@@ -25,7 +25,7 @@ This README outlines how I planned, developed, and deployed the project from sta
   ```bash
   ssh -i "my-key.pem" ubuntu@<EC2-PUBLIC-IP>
   ```
-* I created switched to a dedicated linux user "devuser" for the project
+* I created and switched to a dedicated linux user "devuser" for the project
 
 ![creation of linux user](static\images\linux-user.png)
 
@@ -172,31 +172,3 @@ I used `express.static()` in Node.js to serve the static files.
 ---
 
 ## 🌍 Live Demo
-
-**Public IP:** [http://3.249.238.95/](http://3.249.238.95/)
-
----
-
-## 📜 Tech Stack
-
-* HTML5, CSS3
-* Node.js (Express)
-* Nginx (as reverse proxy)
-* PM2 (Node process manager)
-* AWS EC2 (Ubuntu)
-
----
-
-## 🤝 Author
-
-**Adetokun Adenike**  
-Email: adetokunadenike@gmail.com  
-GitHub: [AdetokunAdenike](https://github.com/AdetokunAdenike)
-
----
-
-## 📜 License
-
-This project is licensed under the MIT License.
-
-> ✅ This project is part of my AltSchool Cloud Engineering Second Semester Exam (2025)
