@@ -25,6 +25,9 @@ This README outlines how I planned, developed, and deployed the project from sta
   ```bash
   ssh -i "my-key.pem" ubuntu@<EC2-PUBLIC-IP>
   ```
+* I created switched to a dedicated linux user "devuser" for the project
+
+![creation of linux user](static\images\linux-user.png)
 
 ### 3. ⚙️ Installing Dependencies
 
